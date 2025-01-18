@@ -90,10 +90,10 @@ footer p {
 
 .image {
     width: 200px;
-    height: 252px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    border-radius: 15px;
-    margin-bottom: 30px;
+    height: 252px;/* Adjust size as needed */
+    border-radius: 50%; /* Make it circular */
+    border: 1px solid white; /* Add a border */
+    position: absolute; /* Position it absolutely within the header */
+    top: 2px; /* Distance from the top */
+    left: 2px; /* Distance from the left */
 }

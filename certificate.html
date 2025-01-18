@@ -1,0 +1,71 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anouar BOUZHAR</title>
+    <link rel="icon" href="assets/OIF.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/certificate.css">
+<body>
+    <header>
+        <h1>Welcome to Anouar BOUZHAR  Web Page</h1>
+        <image class="image" src="assets/my_pic_wtb.png" alt="OIF Logo" width="100" height="100">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="certificate.html">My Certificats</a>
+            <a href="project.html">My Project</a>
+            <a href="zone.html">Zone</a>
+        </nav>
+    </header>
+    <main>
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" onclick="showCategory('deep-learning')">Deep Learning</a></li>
+                <li><a href="#" onclick="showCategory('machine-learning')">Machine Learning</a></li>
+                <li><a href="#" onclick="showCategory('big-data')">Big Data tools</a></li>
+            </ul>
+        </aside>
+        <section class="content">
+            <div id="deep-learning" class="category">
+                <h2>Deep Learning Certificats</h2>
+                <img class="i1" src="assets/dlc/cnn.png" width="40%" height="300px">
+                <img class="i1" src="assets/dlc/sm.png" width="40%" height="300px">
+                <img class="i1" src="assets/dlc/dls.png" width="40%" height="300px">
+                <img class="i1" src="assets/dlc/iho.png" width="40%" height="300px">
+                <img class="i1" src="assets/dlc/nndl.png" width="40%" height="300px">
+                <img class="i1" src="assets/dlc/smlp.png" width="40%" height="300px">
+            </div>
+            <div id="machine-learning" class="category" style="display: none;">
+                <h2>Machine Learning Certificats</h2>
+                <img class="i1" src="assets/mlc/sml.png" width="40%" height="300px">
+                <img class="i1" src="assets/mlc/mls.png" width="40%" height="300px">
+                <img class="i1" src="assets/mlc/ala.png" width="40%" height="300px">
+            </div>
+            <div id="big-data" class="category" style="display: none;">
+                <h2>Machine Learning Certificats</h2>
+                <img class="i1" src="assets/dp/ibd.png" width="40%" height="300px">
+                <img class="i1" src="assets/dp/pawd.png" width="40%" height="300px">
+                <img class="i1" src="assets/dp/pfd.png" width="40%" height="300px">
+                <img class="i1" src="assets/dp/sfd.png" width="40%" height="300px">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Anouar BOUZHAR</p>
+    </footer>
+    <script>
+        function showCategory(categoryId) {
+            // Hide all categories
+            document.querySelectorAll('.category').forEach(function(category) {
+                category.style.display = 'none';
+            });
+
+            // Show the selected category
+            document.getElementById(categoryId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

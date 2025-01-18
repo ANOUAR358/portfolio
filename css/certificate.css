@@ -1,0 +1,140 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 10%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.image {
+    width: 200px;
+    height: 252px;/* Adjust size as needed */
+    border-radius: 50%; /* Make it circular */
+    border: 1px solid white; /* Add a border */
+    position: absolute; /* Position it absolutely within the header */
+    top: 2px; /* Distance from the top */
+    left: 2px; /* Distance from the left */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10%;
+    background: rgba(0, 0, 0, 0.8);
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Main Content Layout */
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px 10%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    padding-left: 1.5cm;
+    padding-top: 3cm;
+    margin-right: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Content Section Styling */
+.content {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.category {
+    display: none; /* Initially hide all categories */
+}
+
+.category h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+/* Hero Section Styling */
+.hero {
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.hero .i1 {
+    position: relative;
+    right: 0cm;
+    margin: 10px;
+    width: 40%;
+    height: 300px;
+    border-radius: 10px;
+}
